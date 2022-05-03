@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Práctico 6 - Ejercicio Adicional 1</title>
+        <meta charset="utf-8">
+        <style>
+            form{
+                width: 600px;
+                padding: 20px;
+                border-radius: 15px;
+                border-color: 1;
+                background-color: whitesmoke;
+                margin: auto;
+            }
+
+            .text-area:hover{
+                background-color: blue;
+                background: url(https://iconape.com/wp-content/files/yo/189849/gif/universidad-de-la-punta-logo.gif) repeat;
+                background-position: center;
+            }
+
+            .text-inp:hover{
+                background-color: darkgray;
+            }
+
+            .pass-inp:hover{
+                background-color: darkgray;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Complet the form</h3>
+        <form>
+            Input Text :
+            <input class="text-inp" type="text" name="text_texto" size="20">
+            <br>
+            Input Password :
+            <input class="pass-inp" type="password" name="pass_contraseña" size="40">
+            <br>
+            Checkbox :
+            <input type="checkbox" name="check_box" value="checkbox">I like it
+            <br>
+            Radio :
+            <input type="radio"  name="oul_texto" value="oul">oul
+            <input type="radio"  name="non_texto" value="non">non
+            <br>
+            Textarea :
+            <textarea class="text-area" name="words" rows="8" cols="60">
+               
+            </textarea>
+            <br>
+            Select (whit short options):
+            <input type="number" name="short" list="numeros" min="1" max="4">
+            <datalist id="numeros">
+                <option label="one" value="1"></option>    
+                 <option label="two" value="2"></option>     
+                 <option label="three" value="3"></option>      
+                 <option label="four" value="4"></option>   
+            </datalist>
+            <br>
+            Select (whit long options):
+            <input type="text" name="long" list="textos" size="30" >
+            <datalist id="textos">
+                <option label="more words" value="a lot of words"></option>    
+                 <option label="more line text" value="to much words"></option>     
+                 <option label="infinity words" value="infinity line text"></option>      
+            </datalist>
+            <br>
+            Submit button:
+            <input type="submit" value="Send">
+        </form>
+    </body>
+</html>
